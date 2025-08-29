@@ -14,9 +14,10 @@ small{color:#666}
 <p>Faith Bag (“the App”) is built by an individual developer. This policy explains what data the App uses and why.</p>
 <h2>Data We Collect</h2>
 <ul>
-<li><b>iCloud Key-Value storage</b>: The App stores your preferences and app state (e.g., streak count, last draw time, chosen emoji, reminder choices) in your iCloud Key-Value Store so they sync across your devices. This data is tied to your iCloud account and not shared with the developer.</li>
-<li><b>Core Data (on-device)</b>: Your takeaways are stored on your device. If you enable iCloud/CloudKit syncing, your data may sync via Apple’s services between your devices.</li>
-<li><b>Notifications</b>: If you allow notifications, we store your reminder preferences locally and schedule local notifications on your device.</li>
+  <li><b>iCloud Key-Value storage</b>: The App stores limited preferences and app state (e.g., streak count, last draw time, chosen emoji, reminder choices) in your iCloud Key-Value Store so they sync across your devices. These items are tied to your iCloud account and are not shared with the developer.</li>
+  <li><b>Core Data (on-device) & CloudKit (optional)</b>: Your takeaways are stored on your device. If you enable iCloud/CloudKit syncing, your takeaways sync privately via Apple’s services between your devices. Records reside in your private iCloud database.</li>
+  <li><b>Widgets & App Groups</b>: Widgets read your on-device settings via Apple’s App Group storage for the app; this does not send data to third parties.</li>
+  <li><b>Notifications</b>: If you allow notifications, the App stores your reminder preferences locally and schedules local notifications on your device. If remote notifications are enabled in the future, Apple may issue a device push token to deliver messages; the App does not link tokens to your identity.</li>
 </ul>
 <h2>Payments</h2>
 <p><b>Tips (In-App Purchases)</b>: Apple processes payments. The App does not receive or store your payment details.</p>
@@ -24,10 +25,10 @@ small{color:#666}
 <p>The App does <b>not</b> use third-party analytics SDKs or advertising trackers.</p>
 <h2>Data Sharing</h2>
 <p>The App does <b>not</b> share your personal data with third parties.</p>
-<h2>Your Choices</h2>
+<h2>Data Deletion & Your Choices</h2>
 <ul>
-<li>You can disable iCloud sync and notifications at any time in iOS Settings.</li>
-<li>You can delete your data by removing the App. Any iCloud KV items will be removed per Apple’s retention schedule.</li>
+  <li>You can disable iCloud sync and notifications at any time in iOS Settings.</li>
+  <li>You can remove local data via the in-app “Delete Data” option or by deleting the App. iCloud Key-Value items are cleared by the App and removed per Apple’s retention schedule. If CloudKit sync is enabled, takeaways can be deleted from your iCloud via the in-app option.</li>
 </ul>
 <h2>Contact</h2>
 <p>If you have questions, email: <a href="mailto:jansz@mit.edu">jansz@mit.edu</a></p>
